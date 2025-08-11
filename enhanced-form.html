@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="A HTML document with a meta description tag">
+        <meta name="keywords" content="width=device-width, initial-scale=1.0">
+        <title>Enhanced HTML Page and Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to my Enhanced HTML Page</h1>
+            <p>This Page demonstrates lists, tables, media and structured HTML form with bult-in validation</p>
+        </header>
+            <h2>Definition list</h2>
+            <dl>
+                <dt>WTO</dt>
+                <dd>World Trade Organization</dd>
+                <dt>UNEP</dt>
+                <dd>United Nations Environment Programme</dd>
+                <dt>WHO</dt>
+                <dd>World Health Organization</dd>
+            </dl>
+            <h2>Nested Lists</h2>
+            <ol>
+                <li>Blenders
+                    <ol type="i">
+                        <li>Tefal
+                            <ol type="a">
+                                <li>Eco Respect</li>
+                                <li>Blended Force Glass</li>
+                                <li>Minimix Glass</li>
+                            </ol>
+                        </li>
+                        <li>Moulinex</li>
+                        <li>Philips</li>
+                    </ol>
+                </li>
+                <li>Iron Boxes
+                    <ul>
+                        <li>Mika</li>
+                        <li>Ramtoms</li>
+                        <li>Von</li>
+                    </ul>
+                </li>
+            </ol>
+            <h2>Popular programming Languages</h2>
+            <table border="1" >
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Popularity Rank</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>1</td>
+                        <td>Data Science</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>2</td>
+                        <td>Enterprise Application</td>
+                    </tr>
+                    <tr>
+                        <td>Java Script</td>
+                        <td>3</td>
+                        <td>Web Development</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Multimedia</h2>
+            <h3>Images</h3>
+            <img src="https://images.pexels.com/photos/33292126/pexels-photo-33292126.jpeg" alt="Forest cover" width="500" height="350">
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not supportthe audio tag.
+            </audio>
+            <h3>Video</h3>
+            <video width="600" height="300" controls>
+                <source src="https://videos.pexels.com/video-files/8095083/8095083-uhd_2560_1440_24fps.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+            <h2>Forms</h2>
+            <form action="..location" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+                    <br><br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    <br><br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+              </fieldset>
+              <fieldset>
+                    <legend>Account Details</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,}" 
+                           title="At least 5 letters or numbers">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6">
+                    <label for="country">Country:</label>
+                    <br><br>
+                    <select id="country" name="country" required>
+                      <option value="">-- Select Your Country --</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="USA">USA</option>
+                      <option value="UK">UK</option>
+                    </select>
+                    <br><br>
+             </fieldset>
+             <fieldset>
+                    <legend>Preferences</legend>
+                     <label>
+                       <input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter
+                    </label>
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+             </fieldset>
+             <fieldset>
+                    <legend>Additional Comments</legend>
+                    <textarea name="comments" placeholder="Write your message here..." rows="4"></textarea>
+             </fieldset>
+             <button type="submit">Submit Form</button>
+            </form>
+    </body>
+</html>
